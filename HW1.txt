@@ -1,0 +1,103 @@
+1) Check where you are. pwd
+
+2) Create a directory. mkdir git_bash
+
+3) Enter the folder. cd git_bash
+
+4) Create 3 directories. mkdir foldername_1 foldername_2 foldername_3
+
+5) Enter in any folder. cd foldername_1
+
+6) Create 5 files (3 txt, 2 json). touch filename_1.txt filename_2.txt touch filename_3.txt filename_4.json filename_5.json
+
+7) Create 3 directories. mkdir foldername_1 foldername_2 foldername_3
+
+8) List the contents of a folder. ls -la
+
+9) + Open any txt file. vim filename_1.txt
+
+10) + Write there smth, any text.
+press "i" 
+Hey there, I'm learning git bash!
+How are u doing?
+I hope u are greate
+^_^
+press "Esc"
+
+11) + save and exit. press ":wq"
+
+
+12) Exit the folder one level up. cd ..
+
+—
+13) Move any 2 files you created to any other folder. mv foldername_1/{filename_1.txt,filename_2.txt} foldername_1/foldername_2
+
+14) Copy any 2 files you created to any other folder. cp foldername_1/{filename_4.json,filename_5.json} foldername_1/foldername_3
+
+
+15) Find a file by name. find ./ -name "filename_5.json"
+
+16) View content in real time (grep command) learn how it works. tail -f foldername_1/foldername_2/filename_1.txt
+
+17) Output the first few lines from a text file. head -2 foldername_1/foldername_2/filename_1.txt
+
+18) Output the last few lines from a text file. tail -2 foldername_1/foldername_2/filename_1.txt
+
+19) View the contents of a long file (less command) learn how it works. less foldername_1/foldername_2/filename_1.txt
+что бы выйти из файла нажать "q" 
+
+20) Output date and time. date +'%D %T'
+=========
+
+Task *
+1) Send an http request to the server.
+http://162.55.220.72:5005/terminal-hw-request
+
+curl http://162.55.220.72:5005/terminal-hw-request
+
+I receive a response in json format whhere I should send my name & age.
+curl "http://162.55.220.72:5005/get_method?name=(Bohdan)&age=(31)"
+
+ 
+2) Write a script that will automatically execute tasks 3, 4, 5, 6, 7, 8, 13
+
+Create a script.
+touch hw_scrpipt.sh
+
+Open script.
+vim hw_script.sh
+
+press "i" to edit:
+
+#!/bin/bash
+Enter the folder.
+cd /d/group_30_free/git_bash/foldername_3
+
+Create 3 folders.
+mkdir folder_1 folder_2 folder_3
+
+Enter to any folder.
+cd folder_1
+
+Create 5 files (3 txt, 2 json).
+touch file_1.txt file_2.txt file_3.txt file_4.json file_5.json
+
+Create 3 folders.
+mkdir folder_11 folder_22 folder_33
+
+List the contents of a folder.
+ls -la
+
+Move any 2 files you created to any other folder.
+mv file_2.txt file_4.json folder_33
+
+press:"Esc"
+
+enter:":wq"
+run script: ./hw_script.sh
+
+
+
+
+
+
